@@ -21,7 +21,10 @@ angular
         templateUrl: 'views/foo.html',
         controller: 'DropCtrl'
       })
-
+      .when('/foo', {
+        templateUrl: 'views/foo.html',
+        controller: 'FilterCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
