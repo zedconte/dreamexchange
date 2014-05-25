@@ -13,6 +13,15 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/foo', {
+        templateUrl: 'views/foo.html',
+        controller: 'FooCtrl'
+      })
+      .when('/foo', {
+        templateUrl: 'views/foo.html',
+        controller: 'DropCtrl'
+      })
+
       .otherwise({
         redirectTo: '/'
       });
